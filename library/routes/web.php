@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/books', 'BooksController@store');
+Route::post('/books', 'BooksController@store');
+Route::patch('/books/{book}', 'BooksController@update');
 
 
